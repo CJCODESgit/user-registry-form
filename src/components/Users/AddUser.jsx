@@ -32,6 +32,7 @@ const AddUser = props => {
             return;
         }
         props.onAddUser(enteredName, enteredUserAge);
+        //resetting the input fields to become blank
         nameInputRef.current.value ='';
         ageInputRef.current.value ='';
     };
@@ -99,6 +100,7 @@ export default AddUser;
 //             return;
 //         }
 //         props.onAddUser(enteredUsername, enteredAge);
+    //resetting the input fields 
 //         setEnteredUsername('')
 //         setEnteredAge('');
 //     };
